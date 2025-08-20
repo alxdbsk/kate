@@ -33,11 +33,13 @@ const toggleMobileMenu = () => {
 
     <div
       v-if="isMobileMenuOpen"
-      class="fixed top-0 left-0 w-screen max-w-96 h-screen z-10 bg-surface-primary flex flex-col py-12 px-4"
+      class="fixed top-0 right-0 w-screen max-w-96 h-screen z-10 bg-surface-primary flex flex-col py-12 px-4"
     >
-      <IconButton class="absolute top-4 right-4" @click="toggleMobileMenu">
-        <CrossIcon class="text-2xl m-0" />
-      </IconButton>
+      <div class="flex justify-end">
+        <IconButton @click="toggleMobileMenu">
+          <CrossIcon class="text-2xl m-0" />
+        </IconButton>
+      </div>
 
       <div class="flex flex-col gap-4">
         <NavBarItemComponent
