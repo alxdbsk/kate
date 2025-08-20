@@ -58,6 +58,13 @@ export default {
         },
         icon: '#C7CDF0',
         'tile-background': '#C7CDF0',
+        rainbow: {
+          purple: '#6147FF',
+          violet: '#3D1DFF',
+          pink: '#D451FF',
+          coral: '#EC458D',
+          orange: '#FFCA8B',
+        },
       },
     },
   },

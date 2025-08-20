@@ -6,11 +6,18 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    'nuxt-svgo',
   ],
   googleFonts: {
     families: {
-      Manrope: [400, 500, 600, 700]
-    }
-  }
+      Manrope: [400, 500, 600, 700],
+    },
+  },
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
 })

@@ -1,6 +1,13 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<style scoped>
+:global(svg) {
+  margin-bottom: 0 !important;
+}
+</style>
